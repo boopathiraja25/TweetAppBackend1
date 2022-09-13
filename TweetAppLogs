@@ -1,0 +1,330 @@
+2022-08-09 15:27:58.569  INFO 13236 --- [restartedMain] com.tweetapp.TweetAppApplication         : Starting TweetAppApplication using Java 11.0.12 on ctscjava998 with PID 13236 (C:\Users\cogjava720\Desktop\TweetApp\TweetApp\target\classes started by cogjava720 in C:\Users\cogjava720\Desktop\TweetApp\TweetApp)
+2022-08-09 15:27:58.570  INFO 13236 --- [restartedMain] com.tweetapp.TweetAppApplication         : No active profile set, falling back to default profiles: default
+2022-08-09 15:27:59.204  INFO 13236 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-08-09 15:27:59.228  INFO 13236 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 2 MongoDB repository interfaces.
+2022-08-09 15:27:59.336  INFO 13236 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2022-08-09 15:27:59.337  INFO 13236 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-09 15:27:59.337  INFO 13236 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-08-09 15:27:59.364  INFO 13236 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-09 15:27:59.365  INFO 13236 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 791 ms
+2022-08-09 15:27:59.437  INFO 13236 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-08-09 15:27:59.442  INFO 13236 --- [cluster-rtt-ClusterId{value='62f22fa765131f5ad1dbd64e', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:212}] to localhost:27017
+2022-08-09 15:27:59.444  INFO 13236 --- [cluster-ClusterId{value='62f22fa765131f5ad1dbd64e', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:213}] to localhost:27017
+2022-08-09 15:27:59.447  INFO 13236 --- [cluster-ClusterId{value='62f22fa765131f5ad1dbd64e', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2611400}
+2022-08-09 15:27:59.470  INFO 13236 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-08-09 15:27:59.664  INFO 13236 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-08-09 15:27:59.693  INFO 13236 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-09 15:27:59.735  INFO 13236 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-09 15:27:59.842  INFO 13236 --- [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-tweet_group-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = tweet_group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-08-09 15:27:59.847  INFO 13236 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.6.0
+2022-08-09 15:27:59.847  INFO 13236 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 62abe01bee039651
+2022-08-09 15:27:59.848  INFO 13236 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1660039079847
+2022-08-09 15:27:59.859  INFO 13236 --- [restartedMain] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-tweet_group-2, groupId=tweet_group] Subscribed to topic(s): TweetMessage
+2022-08-09 15:27:59.860  INFO 13236 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2022-08-09 15:27:59.867  INFO 13236 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2022-08-09 15:27:59.869  INFO 13236 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-08-09 15:27:59.870  INFO 13236 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-08-09 15:27:59.871  INFO 13236 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-tweet_group-2, groupId=tweet_group] Cluster ID: mMLVhp9NTp6VDFot0aQakg
+2022-08-09 15:27:59.872  INFO 13236 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-tweet_group-2, groupId=tweet_group] Discovered group coordinator ctscjava998.iiht.tech:9092 (id: 2147483647 rack: null)
+2022-08-09 15:27:59.874  INFO 13236 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-tweet_group-2, groupId=tweet_group] (Re-)joining group
+2022-08-09 15:27:59.878  INFO 13236 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-tweet_group-2, groupId=tweet_group] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group.
+2022-08-09 15:27:59.878  INFO 13236 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-tweet_group-2, groupId=tweet_group] (Re-)joining group
+2022-08-09 15:27:59.883  INFO 13236 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-tweet_group-2, groupId=tweet_group] Finished assignment for group at generation 3: {consumer-tweet_group-2-60327f8e-9a49-41b9-b310-9fe1bca2eb26=Assignment(partitions=[TweetMessage-0, TweetMessage-1, TweetMessage-2])}
+2022-08-09 15:27:59.889  INFO 13236 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-tweet_group-2, groupId=tweet_group] Successfully joined group with generation 3
+2022-08-09 15:27:59.891  INFO 13236 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-tweet_group-2, groupId=tweet_group] Notifying assignor about the new Assignment(partitions=[TweetMessage-0, TweetMessage-1, TweetMessage-2])
+2022-08-09 15:27:59.891  INFO 13236 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-08-09 15:27:59.891  INFO 13236 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-tweet_group-2, groupId=tweet_group] Adding newly assigned partitions: TweetMessage-1, TweetMessage-0, TweetMessage-2
+2022-08-09 15:27:59.893  INFO 13236 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-tweet_group-2, groupId=tweet_group] Found no committed offset for partition TweetMessage-1
+2022-08-09 15:27:59.894  INFO 13236 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-tweet_group-2, groupId=tweet_group] Found no committed offset for partition TweetMessage-0
+2022-08-09 15:27:59.894  INFO 13236 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-tweet_group-2, groupId=tweet_group] Found no committed offset for partition TweetMessage-2
+2022-08-09 15:27:59.898  INFO 13236 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-tweet_group-2, groupId=tweet_group] Resetting offset for partition TweetMessage-1 to offset 0.
+2022-08-09 15:27:59.899  INFO 13236 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-tweet_group-2, groupId=tweet_group] Resetting offset for partition TweetMessage-0 to offset 0.
+2022-08-09 15:27:59.899  INFO 13236 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-tweet_group-2, groupId=tweet_group] Resetting offset for partition TweetMessage-2 to offset 0.
+2022-08-09 15:27:59.899  INFO 13236 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : tweet_group: partitions assigned: [TweetMessage-1, TweetMessage-0, TweetMessage-2]
+2022-08-09 15:27:59.904  INFO 13236 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2022-08-09 15:27:59.906  INFO 13236 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2022-08-09 15:27:59.907  INFO 13236 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingDELETE_1
+2022-08-09 15:27:59.908  INFO 13236 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2022-08-09 15:27:59.910  INFO 13236 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_4
+2022-08-09 15:27:59.918  INFO 13236 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_5
+2022-08-09 15:27:59.921  INFO 13236 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_6
+2022-08-09 15:27:59.923  INFO 13236 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_7
+2022-08-09 15:27:59.926  INFO 13236 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_8
+2022-08-09 15:27:59.928  INFO 13236 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_9
+2022-08-09 15:27:59.930  INFO 13236 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_10
+2022-08-09 15:27:59.931  INFO 13236 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_11
+2022-08-09 15:27:59.933  INFO 13236 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_12
+2022-08-09 15:27:59.934  INFO 13236 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_13
+2022-08-09 15:27:59.935  INFO 13236 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_14
+2022-08-09 15:27:59.936  INFO 13236 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_15
+2022-08-09 15:27:59.938  INFO 13236 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_16
+2022-08-09 15:27:59.939  INFO 13236 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_17
+2022-08-09 15:27:59.940  INFO 13236 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_18
+2022-08-09 15:27:59.941  INFO 13236 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_19
+2022-08-09 15:28:00.018  INFO 13236 --- [restartedMain] com.tweetapp.TweetAppApplication         : Started TweetAppApplication in 1.505 seconds (JVM running for 118.377)
+2022-08-09 15:28:00.030  INFO 13236 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   LogFileWebEndpointAutoConfiguration#logFileWebEndpoint matched:
+      - Log File found logging.file.name TweetAppLogs (LogFileWebEndpointAutoConfiguration.LogFileCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.logging.LogFileWebEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2022-08-09 15:28:34.625  INFO 13236 --- [RMI TCP Connection(3)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-09 15:28:34.663  INFO 13236 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-tweet_group-2, groupId=tweet_group] Revoke previously assigned partitions TweetMessage-1, TweetMessage-0, TweetMessage-2
+2022-08-09 15:28:34.663  INFO 13236 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : tweet_group: partitions revoked: [TweetMessage-1, TweetMessage-0, TweetMessage-2]
+2022-08-09 15:28:34.663  INFO 13236 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-tweet_group-2, groupId=tweet_group] Member consumer-tweet_group-2-60327f8e-9a49-41b9-b310-9fe1bca2eb26 sending LeaveGroup request to coordinator ctscjava998.iiht.tech:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2022-08-09 15:28:34.664  INFO 13236 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-tweet_group-2, groupId=tweet_group] Unsubscribed all topics or patterns and assigned partitions
+2022-08-09 15:28:34.664  INFO 13236 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2022-08-09 15:28:34.673  INFO 13236 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : tweet_group: Consumer stopped
+2022-08-09 15:28:34.676  INFO 13236 --- [RMI TCP Connection(3)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-08-09 15:28:44.745  INFO 904 --- [restartedMain] com.tweetapp.TweetAppApplication         : Starting TweetAppApplication using Java 11.0.12 on ctscjava998 with PID 904 (C:\Users\cogjava720\Desktop\TweetApp\TweetApp\target\classes started by cogjava720 in C:\Users\cogjava720\Desktop\TweetApp\TweetApp)
+2022-08-09 15:28:44.752  INFO 904 --- [restartedMain] com.tweetapp.TweetAppApplication         : No active profile set, falling back to default profiles: default
+2022-08-09 15:28:44.808  INFO 904 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-09 15:28:44.808  INFO 904 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-09 15:28:46.267  INFO 904 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-08-09 15:28:46.339  INFO 904 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 2 MongoDB repository interfaces.
+2022-08-09 15:28:47.068  INFO 904 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2022-08-09 15:28:47.082  INFO 904 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-09 15:28:47.083  INFO 904 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-08-09 15:28:47.220  INFO 904 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-09 15:28:47.221  INFO 904 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2411 ms
+2022-08-09 15:28:47.576  INFO 904 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-08-09 15:28:47.643  INFO 904 --- [cluster-ClusterId{value='62f22fd7e9ac6a17e2eac15a', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:214}] to localhost:27017
+2022-08-09 15:28:47.645  INFO 904 --- [cluster-rtt-ClusterId{value='62f22fd7e9ac6a17e2eac15a', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:215}] to localhost:27017
+2022-08-09 15:28:47.647  INFO 904 --- [cluster-ClusterId{value='62f22fd7e9ac6a17e2eac15a', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=24128200}
+2022-08-09 15:28:47.797  INFO 904 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-08-09 15:28:48.494  INFO 904 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-08-09 15:28:48.579  INFO 904 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-09 15:28:48.714  INFO 904 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-09 15:28:49.088  INFO 904 --- [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-tweet_group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = tweet_group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-08-09 15:28:49.179  INFO 904 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.6.0
+2022-08-09 15:28:49.181  INFO 904 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 62abe01bee039651
+2022-08-09 15:28:49.181  INFO 904 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1660039129177
+2022-08-09 15:28:49.223  INFO 904 --- [restartedMain] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-tweet_group-1, groupId=tweet_group] Subscribed to topic(s): TweetMessage
+2022-08-09 15:28:49.227  INFO 904 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2022-08-09 15:28:49.251  INFO 904 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2022-08-09 15:28:49.252  INFO 904 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-08-09 15:28:49.276  INFO 904 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-08-09 15:28:49.332  INFO 904 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-08-09 15:28:49.423  INFO 904 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2022-08-09 15:28:49.426  INFO 904 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2022-08-09 15:28:49.429  INFO 904 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingDELETE_1
+2022-08-09 15:28:49.431  INFO 904 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2022-08-09 15:28:49.434  INFO 904 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_4
+2022-08-09 15:28:49.436  INFO 904 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_5
+2022-08-09 15:28:49.438  INFO 904 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_6
+2022-08-09 15:28:49.440  INFO 904 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_7
+2022-08-09 15:28:49.442  INFO 904 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_8
+2022-08-09 15:28:49.444  INFO 904 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_9
+2022-08-09 15:28:49.446  INFO 904 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_10
+2022-08-09 15:28:49.448  INFO 904 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_11
+2022-08-09 15:28:49.451  INFO 904 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_12
+2022-08-09 15:28:49.452  INFO 904 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_13
+2022-08-09 15:28:49.454  INFO 904 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_14
+2022-08-09 15:28:49.456  INFO 904 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_15
+2022-08-09 15:28:49.457  INFO 904 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_16
+2022-08-09 15:28:49.459  INFO 904 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_17
+2022-08-09 15:28:49.460  INFO 904 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_18
+2022-08-09 15:28:49.462  INFO 904 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_19
+2022-08-09 15:28:49.610  INFO 904 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-tweet_group-1, groupId=tweet_group] Cluster ID: mMLVhp9NTp6VDFot0aQakg
+2022-08-09 15:28:49.612  INFO 904 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-tweet_group-1, groupId=tweet_group] Discovered group coordinator ctscjava998.iiht.tech:9092 (id: 2147483647 rack: null)
+2022-08-09 15:28:49.616  INFO 904 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-tweet_group-1, groupId=tweet_group] (Re-)joining group
+2022-08-09 15:28:49.634  INFO 904 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-tweet_group-1, groupId=tweet_group] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group.
+2022-08-09 15:28:49.635  INFO 904 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-tweet_group-1, groupId=tweet_group] (Re-)joining group
+2022-08-09 15:28:49.642  INFO 904 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-tweet_group-1, groupId=tweet_group] Finished assignment for group at generation 5: {consumer-tweet_group-1-84425ead-b503-44ee-802b-ffc2eab949d7=Assignment(partitions=[TweetMessage-0, TweetMessage-1, TweetMessage-2])}
+2022-08-09 15:28:49.650  INFO 904 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-tweet_group-1, groupId=tweet_group] Successfully joined group with generation 5
+2022-08-09 15:28:49.652  INFO 904 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-tweet_group-1, groupId=tweet_group] Notifying assignor about the new Assignment(partitions=[TweetMessage-0, TweetMessage-1, TweetMessage-2])
+2022-08-09 15:28:49.653  INFO 904 --- [restartedMain] com.tweetapp.TweetAppApplication         : Started TweetAppApplication in 5.39 seconds (JVM running for 6.423)
+2022-08-09 15:28:49.656  INFO 904 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-tweet_group-1, groupId=tweet_group] Adding newly assigned partitions: TweetMessage-1, TweetMessage-0, TweetMessage-2
+2022-08-09 15:28:49.666  INFO 904 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-tweet_group-1, groupId=tweet_group] Found no committed offset for partition TweetMessage-1
+2022-08-09 15:28:49.667  INFO 904 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-tweet_group-1, groupId=tweet_group] Found no committed offset for partition TweetMessage-0
+2022-08-09 15:28:49.667  INFO 904 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-tweet_group-1, groupId=tweet_group] Found no committed offset for partition TweetMessage-2
+2022-08-09 15:28:49.680  INFO 904 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-tweet_group-1, groupId=tweet_group] Resetting offset for partition TweetMessage-1 to offset 0.
+2022-08-09 15:28:49.681  INFO 904 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-tweet_group-1, groupId=tweet_group] Resetting offset for partition TweetMessage-0 to offset 0.
+2022-08-09 15:28:49.681  INFO 904 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-tweet_group-1, groupId=tweet_group] Resetting offset for partition TweetMessage-2 to offset 0.
+2022-08-09 15:28:49.682  INFO 904 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : tweet_group: partitions assigned: [TweetMessage-1, TweetMessage-0, TweetMessage-2]
+2022-08-09 15:28:51.790  INFO 904 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-09 15:28:51.791  INFO 904 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-09 15:28:51.793  INFO 904 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-08-09 16:33:21.452  INFO 904 --- [RMI TCP Connection(3)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-09 16:33:21.529  INFO 904 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-tweet_group-1, groupId=tweet_group] Revoke previously assigned partitions TweetMessage-1, TweetMessage-0, TweetMessage-2
+2022-08-09 16:33:21.530  INFO 904 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : tweet_group: partitions revoked: [TweetMessage-1, TweetMessage-0, TweetMessage-2]
+2022-08-09 16:33:21.531  INFO 904 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-tweet_group-1, groupId=tweet_group] Member consumer-tweet_group-1-84425ead-b503-44ee-802b-ffc2eab949d7 sending LeaveGroup request to coordinator ctscjava998.iiht.tech:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2022-08-09 16:33:21.535  INFO 904 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-tweet_group-1, groupId=tweet_group] Unsubscribed all topics or patterns and assigned partitions
+2022-08-09 16:33:21.535  INFO 904 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2022-08-09 16:33:21.557  INFO 904 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : tweet_group: Consumer stopped
+2022-08-09 16:33:21.569  INFO 904 --- [RMI TCP Connection(3)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
